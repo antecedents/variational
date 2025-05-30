@@ -71,10 +71,8 @@ Never deploy a root container.  **Remember**, during the development phase the c
 >
 
 
-
-
 <br>
-<br>
+
 
 # References
 
@@ -82,3 +80,15 @@ Never deploy a root container.  **Remember**, during the development phase the c
 * [TensorFlow & Docker](https://www.tensorflow.org/install/docker#examples_using_gpu-enabled_images)
 * [Start workflow executions from a task state in Step Functions](https://docs.aws.amazon.com/step-functions/latest/dg/concepts-nested-workflows.html)
   * [Deploy a state machine using a starter template for Step Functions](https://docs.aws.amazon.com/step-functions/latest/dg/starter-templates.html)
+
+<br>
+<br>
+
+<br>
+<br>
+
+<br>
+<br>
+
+<br>
+<br>
