@@ -53,6 +53,7 @@ class Interface:
                self.__arguments.get('s3').get('affix') + '/' + f'{self.__configurations.stamp}.csv')
         text = txa.TextAttributes(uri=uri, header=0)
         data = self.__streams.read(text=text)
+        data['n_attendances'] = data['n_attendances'].astype(float)
 
         return data[self.__configurations.fields]
 
