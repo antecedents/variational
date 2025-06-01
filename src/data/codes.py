@@ -23,6 +23,11 @@ class Codes:
         return [ce.Codes(**value) for value in values]
 
     def exc(self, data: pd.DataFrame) -> list[ce.Codes]:
+        """
+
+        :param data: Fields week_ending_date, health_board_code, hospital_code, n_attendances
+        :return:
+        """
 
         frame = data.copy()[['health_board_code', 'hospital_code']].drop_duplicates()
         values: list[dict] = frame.reset_index(drop=True).to_dict(orient='records')
