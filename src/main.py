@@ -27,7 +27,7 @@ def main():
     logger.info(codes)
 
     # Modelling
-    src.modelling.interface.Interface(data=data, arguments=arguments).exc(codes=codes[:2])
+    src.modelling.interface.Interface(data=data, arguments=arguments).exc(codes=codes)
 
     # Transfer
     src.transfer.interface.Interface(connector=connector, service=service, s3_parameters=s3_parameters).exc()
@@ -66,7 +66,7 @@ if __name__ == '__main__':
     gpu = tf.config.list_physical_devices('GPU')
 
     if arguments.get('cpu') | (not gpu):
-        os.environ['CUDA_VISIBLE_DEVICES'] = '-1'
+        os.environ['CUDA_VISIBLE_DEVICES'] = ''
         tf.config.set_visible_devices([], 'GPU')
 
     main()
