@@ -69,9 +69,7 @@ class Interface:
             strings = self.__set_metadata(frame=strings.copy())
             logging.info(strings)
 
-            '''
             messages = src.s3.ingress.Ingress(
                 service=self.__service, bucket_name=self.__s3_parameters.internal).exc(
                 strings=strings, tags={'project': 'emergency'})
             logging.info(messages)
-            '''
